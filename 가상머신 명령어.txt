@@ -1,0 +1,17 @@
+scp -r ~/test 2019-14184@ds03.snucse.org:C:\data_structure\notice\testcase\testcase\1-BigInteger
+$ scp ~/ 2019-14184@ds03.snucse.org:~/HW2.t
+scp -r C:\data_structure\notice\testcase\testcase\1-BigInteger 2019-14184@ds03.snucse.org:/home/2019-14184/test1
+~\Documents\서울대학교 수업자료\2023-1학기\자료구조\Hw1\src
+find . -type f -name '*.java' | xargs -I{} sed -i '1s/^\xEF\xBB\xBF//' {}
+C:\Users\ghlee\Documents\서울대학교 수업자료\2023-1학기\자료구조\HW2\src find . -type f -name '*.java' | xargs -I{} sed -i '1s/^\xEF\xBB\xBF//' {}
+scp -r C:\data_structure\notice\testcase\testcase\3-StackCalculator 2019-14184@ds03.snucse.org:/home/2019-14184/test3
+scp -r C:\data_structure\notice\testcase\testcase\4-Sorting 2019-14184@ds03.snucse.org:/home/2019-14184/test4
+scp -r C:\data_structure\notice\testcase\testcase\5-Matching 2019-14184@ds03.snucse.org:/home/2019-14184/test5
+scp -r C:\data_structure\notice\testcase\testcase\6-Subway 2019-14184@ds03.snucse.org:/home/2019-14184/test6
+scp -r 2019-14184@ds03.snucse.org:/home/2019-14184/test6/my_output C:\data_structure\notice\testcase\testcase\6-Subway
+
+
+3203
+~\Documents\서울대학교 수업자료\2023-1학기\자료구조\Hw1\src
+C:\Users\ghlee\Documents\서울대학교 수업자료\2023-1학기\자료구조\HW4\hw4\src
+tar -cvf HW6.tar Subway.java 

@@ -1,0 +1,49 @@
+name hashamp
+costvertext hashmap
+첫번째 입력
+고유번호 역이름 호선 
+역이름을 key로 고유번호 저장(hash map)
+두번째 입력 
+고유번호를 key로 edge cost저장(adj vertex와 cost를 동시에 저장) 역이름도 저장 
+세번째 입력
+역이름
+환승시간 update 
+
+역이름: 역 하나당 여러개의 id가 있다. 그중 아무 id를 시작점으로 삼는다.
+다익스트라 알고리즘 
+node
+3개의 instance
+boolean setin
+int cost
+String index
+String prev
+
+hash map
+String id를 키로 Node를 hash에 저장(정점외의 cost를 Inf로 초기화)
+
+알고리즘 
+시작 정점 r
+r.cost 0으로 초기화  
+정점외의 cost를 Inf로 초기화 
+pqdp 정점을 넣는다
+while true 
+    pq에서 최소node를 return(delete)
+    u.setin = true
+    if(u가 도착역을 가리키면)
+           break 후 u랑 hashmap return 
+    for u의 graphinfo에 들어있는 u.adv에 대해서 Node v 을 불러온다
+           if v.setin = false이고 갱신 값이 더 작으면
+                 갱신(hashmap 갱신) 및 pq에 넣는다(삭제 후 삽입)
+                 v.prev = u 
+C:\Users\ghlee\Documents\서울대학교수업자료\2023-1학기\자료구조\HW6\HW6\src\subway.txt
+C:\Users\ghlee\Documents\서울대학교수업자료\2023-1학기\자료구조\HW6\HW6\src\merge.txt
+C:\Users\ghlee\Documents\서울대학교수업자료\2023-1학기\자료구조\HW6\HW6\src\oneway.txt
+javac -encoding utf-8 Subway.java
+java Subway C:\Users\ghlee\Documents\서울대
+학교수업자료\2023-1학기\자료구조\HW6\HW6\src\subway.txt
+    
+
+0,1
+0,2 1,2
+0,3 1,3 2,3
+
